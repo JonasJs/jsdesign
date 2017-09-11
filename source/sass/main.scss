@@ -4,17 +4,53 @@
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
+ 
 //Components  
 @import "components/menu";
-@import "variables";
+@import "components/header";
+@import "variables"; 
 
 
 *{
-	margin:0px;
-	padding:0px;
+	margin:0px; 
+	padding:0px; 
 	font-family: 'Open Sans', sans-serif; 
 }
 a{
 	color: $font-color;
+	&:hover{
+		text-decoration:none;
+	}
+}
+p{
+	font-size: 16px;
+}
+.btn-primary{
+	margin-top:40px;
+	padding: 21px 48px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: $btn-primary;
+	&:hover{
+		background: #E52264;
+	}
+	.fa{
+		margin-right: 16px;
+	}
+}
+.btn-secondary{
+	margin-top:40px;
+	padding: 19px 48px;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 2px solid $font-color;
+	background: none;
+	&:hover{ 
+		background: $font-color;
+		color:$background-secondary;
+		border: 2px solid $font-color;
+	}
+	.fa{
+		margin-right: 16px;
+	}
 }

@@ -4,7 +4,7 @@ var watch = require('gulp-watch');
 
 // task para o sass
 gulp.task('sass', function () {
- return gulp.src('source/sass/**/*.scss')
+ return gulp.src('source/sass/*.scss')
    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
    .pipe(gulp.dest('assets/style'));
 });

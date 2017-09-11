@@ -1,0 +1,36 @@
+.header{
+	width:100%;
+	background:$background-secondary;
+	color:$background-primary;
+	opacity:0.9;
+	position: relative;
+	padding: 72px 0;
+	&::after{  
+		content:"";
+		background-image:url("../images/bg-header.png");
+		position:absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		opacity:0.1;
+		z-index: -2;
+	}
+	.content{
+		opacity:1;
+		margin-top: 35px;
+		h1{
+			margin-top: 100px;
+			font-size: 55px;
+			font-weight: bold;
+			span{
+				color: $font-secondary;
+			}
+		}
+		p{
+			margin:24px 0 60px 0;
+			color: $font-secondary;
+		}
+	}
+
+}

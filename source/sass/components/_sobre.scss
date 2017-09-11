@@ -1,0 +1,26 @@
+@import "variables";
+
+.sobre{
+	padding: 72px 0;
+	background-image: url(../images/bg-sobre.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 560px 100%;
+	.content{
+		h1{
+			&:after{
+				content: "";
+				display: block;
+				margin-top: 8px;
+				width: 80px;
+				height: 2px;
+				background: $btn-primary;
+			}
+		}
+		p{
+			margin: 48px 0 59px 0;
+			color: $font-color;
+		}
+	}
+
+}

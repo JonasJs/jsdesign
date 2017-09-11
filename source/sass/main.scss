@@ -8,6 +8,7 @@
 //Components  
 @import "components/menu";
 @import "components/header";
+@import "components/sobre";
 @import "variables"; 
 
 *{
@@ -23,6 +24,14 @@ a{
 }
 p{
 	font-size: 16px;
+}
+
+//Title
+.title{
+	color:$background-secondary;
+	font-size: 45px;
+	font-weight:bold;
+	text-transform: uppercase;
 }
 .btn-primary{
 	margin-top:40px;

@@ -1,0 +1,107 @@
+#trabalhos{
+	background:$background-secondary;
+	h1{
+		color: $background-primary;
+	}
+	img{
+		width: 100%;
+	}
+	.content-primary{
+		margin-top: 40px;
+	}
+	.content-secondary{
+		margin-top: 24px;
+	}
+	figure{
+		overflow: hidden;
+		position: relative;
+		&:hover{
+			.content-overlay{
+				opacity:1;	
+			}
+			.overlay{
+				opacity:0.8;	
+			}
+		}
+		figcaption{
+			.content-overlay{
+				position:absolute;
+				z-index: 2;
+				text-align:  center;
+				width: 100%;
+				top: 30%;
+				opacity:0;
+				-webkit-transition:0.5s ease;
+				-moz-transition: 0.5s ease;
+				-o-transition:0.5s ease;
+				-ms-transition: 0.5s ease;
+				transition: 0.5s ease;
+				h3{
+					color:$btn-primary;
+				    font-weight: bold;
+				    margin-bottom: 20px;
+				}
+				p{
+					width: 80%;
+					margin: 0 auto 16px auto;
+					color: $background-primary;
+				}
+				a{
+					font-size: 25px;
+					padding: 0 8px;
+					color: #eee;
+					&:hover{
+						color:#ffffff;
+					}
+				}
+				.disabled{
+					pointer-events: none;
+   					cursor: pointer;
+					color:$font-color;
+
+					&:hover{
+						color:#bfbfbf;
+					}
+				}
+			}
+			.overlay{
+				opacity:0;
+				position: absolute;
+				background-color: $background-secondary;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border: 10px solid rgba(255, 255, 255, 1);
+			    -webkit-background-clip: padding-box; /* for Safari */
+			    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+							   
+				-webkit-transition:0.5s ease;
+				-moz-transition: 0.5s ease;
+				-o-transition:0.5s ease;
+				-ms-transition: 0.5s ease;
+				transition: 0.5s ease;
+
+			}
+		}	
+	}
+	#trabalho-redes{
+		text-align: center;
+		font-size: 30px;
+		a{
+			padding:0 8px;
+			color: $font-secondary;
+			transition: all 0.2s ease-in-out 0s;
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-o-transition: all 0.2s ease-in-out 0s;
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	
+}

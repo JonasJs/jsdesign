@@ -5,19 +5,28 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
  
+// Variaveis
+@import "variables";
+
 //Components  
 @import "components/menu";
 @import "components/header";
 @import "components/sobre";
 @import "components/servico";
-
-@import "variables"; 
+@import "components/trabalhos";
+ 
 
 *{
 	margin:0px; 
 	padding:0px; 
 	font-family: 'Open Sans', sans-serif; 
 	letter-spacing: 0.9px;
+}
+.box-item{
+	margin-top: 48px;
+}
+section{
+	padding: 72px 0 ;
 }
 a{
 	color: $font-color;
@@ -47,12 +56,15 @@ p{
 		background: $btn-primary;
 	}
 }
+
+// Btn
 .btn-primary{
 	margin-top:40px;
 	padding: 21px 48px;
 	font-size: 14px;
 	text-transform: uppercase;
 	background: $btn-primary;
+	display: inline-block;
 	&:hover{
 		background: #E52264;
 	}
@@ -67,6 +79,7 @@ p{
 	text-transform: uppercase;
 	border: 2px solid $background-primary;
 	background: none;
+	display: inline-block;
 	&:hover{ 
 		background: $background-primary;
 		color:$background-secondary;

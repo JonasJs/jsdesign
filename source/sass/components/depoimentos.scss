@@ -1,0 +1,73 @@
+#depoimentos{
+	background:$background-secondary;
+	h1{
+		color: $background-primary;
+	}
+	.slider{
+		margin-top: 48px;
+
+		.slider-item{
+			.item{
+				background: $background-primary;
+				padding: 32px;
+				i.aspas{
+					color: $btn-primary;
+					font-size: 33px;
+					transform: rotate(180deg);
+				}
+				.slider-img{
+					margin-bottom: 24px;
+					img{
+						margin:0 auto;
+						width: 120px;
+	    				border-radius: 70px;
+					}
+				}
+				p{
+					margin:0;
+					text-align: center;
+				}
+				.slider-title{
+					margin-top: 24px;
+					font-size: 21px;
+					font-weight: bold;
+					color: #3E3E3E;
+				}
+				.slider-subTitle{
+					font-size: 13px;
+				}
+				.icones{
+					margin-top: 8px;
+					text-align: center;
+					i{
+						margin: 0 8px;
+					}
+					a:hover{
+						color: $btn-primary;
+
+					}
+				}
+			}
+		}
+
+	}
+	.slider-buttons{
+		margin: 48px auto 0 auto;
+		width: 136px;
+		background: $btn-primary;
+		button{
+			width: 65px;
+		    height: 60px;
+		    border: none;
+		    background: $btn-primary;
+		    color: $background-primary;
+		    cursor: pointer;
+		    &:focus{
+				outline: none;
+			}
+			&:hover{
+				color: #F882A9;
+			}
+		}
+	}
+}

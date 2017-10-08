@@ -15,6 +15,7 @@
 @import "components/servico";
 @import "components/trabalhos";
 @import "components/habilidades";
+@import "components/depoimentos";
  
 
 *{
@@ -22,6 +23,9 @@
 	padding:0px; 
 	font-family: 'Open Sans', sans-serif; 
 	letter-spacing: 0.9px;
+	&:focus {
+    	outline: none;
+	}
 }
 .box-item{
 	margin-top: 48px;

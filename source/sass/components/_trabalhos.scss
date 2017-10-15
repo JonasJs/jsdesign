@@ -4,7 +4,10 @@
 		color: $background-primary;
 	}
 	img{
-		width: 100%;
+		height: 100%;
+		@media #{$mobile-extra,$mobile,$small}{
+			width: 100%;
+		}
 	}
 	.content-primary{
 		margin-top: 40px;
@@ -15,6 +18,14 @@
 	figure{
 		overflow: hidden;
 		position: relative;
+		height: 352px;
+		@media #{$mobile-extra,$mobile}{
+			height: 420px;
+		}
+		@media #{$small}{
+			height: auto;
+		}
+		
 		&:hover{
 			.content-overlay{
 				opacity:1;	
@@ -36,10 +47,14 @@
 				-o-transition:0.5s ease;
 				-ms-transition: 0.5s ease;
 				transition: 0.5s ease;
+				@media #{$small}{
+					top: 20%;
+				}
 				h3{
 					color:$btn-primary;
 				    font-weight: bold;
 				    margin-bottom: 20px;
+				    font-size: 24px;
 				}
 				p{
 					width: 80%;

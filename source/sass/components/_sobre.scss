@@ -1,0 +1,20 @@
+#sobre{
+	background-color: $background-primary;
+	background-image: url(../images/bg-sobre.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 560px 100%;
+    @media #{$mobile-extra,$mobile,$small}{
+		background-image: none;
+	}
+	@media #{$tablet}{
+		background: block;
+		background-size: 345px 100%;
+	}
+	.content{
+		p{
+			margin: 48px 0 59px 0;
+		}
+	}
+
+}

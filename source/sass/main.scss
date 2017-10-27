@@ -1,5 +1,104 @@
-/* Componets */
-@import 'components/menu';
+//Plugins
+@import "bower_components/bootstrap/scss/bootstrap";
+@import "font-awesome/scss/font-awesome";
 
-/* Componets */
-@import 'pages/perfil';
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+ 
+// Variaveis
+@import "variables";
+@import "grid";
+
+//Components  
+@import "components/menu";
+@import "components/header";
+@import "components/sobre";
+@import "components/servico";
+@import "components/trabalhos";
+@import "components/habilidades";
+@import "components/depoimentos";
+@import "components/contato";
+@import "components/footer";
+ 
+
+*{
+	margin:0px; 
+	padding:0px; 
+	font-family: 'Open Sans', sans-serif; 
+	letter-spacing: 0.9px;
+	outline: none;
+	&:focus {
+    	outline: none;
+	}
+}
+.box-item{
+	margin-top: 48px;
+}
+section{
+	padding: 72px 0 ;
+}
+a{
+	color: $font-color;
+	&:hover{
+		text-decoration:none;
+	}
+}
+p{
+	line-height:25px;
+	font-size: 16px;
+	color: $font-color;
+}
+
+//Title
+.title{
+	color:$background-secondary;
+	font-size: 45px;
+	font-weight:bold;
+	text-transform: uppercase;
+	// margin-bottom:48px
+		&:after{
+		content: "";
+		display: block;
+		margin-top: 8px;
+		width: 80px;
+		height: 2px;
+		background: $btn-primary;
+	}
+	@media #{$small}{
+		font-size: 40px;
+	}
+	
+}
+
+// Btn
+.btn-primary{
+	margin-top:40px;
+	padding: 21px 48px;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: $btn-primary;
+	display: inline-block;
+	&:hover{
+		background: #E52264;
+	}
+	.fa{
+		margin-right: 16px;
+	}
+}
+.btn-secondary{
+	margin-top:40px;
+	padding: 19px 48px;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 2px solid $background-primary;
+	background: none;
+	display: inline-block;
+	&:hover{ 
+		background: $background-primary;
+		color:$background-secondary;
+		border: 2px solid $background-primary;
+	}
+	.fa{
+		margin-right: 16px;
+	}
+}

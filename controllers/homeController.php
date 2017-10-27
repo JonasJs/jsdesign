@@ -2,9 +2,7 @@
 
 class homeController extends controller{
 	public function __construct(){
-		// Estancia a class
-		$u = new Usuarios();
-		$u->islogged();
+
 
 	}
 	public function index(){

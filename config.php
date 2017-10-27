@@ -4,7 +4,7 @@ require 'environment.php';
 $config = array();
 //Verifica se o environment esta em developmente ou em production
 if(ENVIRONMENT == 'development'){
-	define("BASE_URL", "jsdesign/");
+	define("BASE_URL", "/jsdesign/");
 	// Configuração local
 	$config['dbname'] = 'jsdesign';
 	$config['host'] = 'localhost';

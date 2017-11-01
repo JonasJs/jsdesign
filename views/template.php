@@ -17,13 +17,18 @@
     <!-- DEVICON -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+	<!-- Styles -->
+	<?php
+	// Verifica se ele esta na index
+	$url ="$_SERVER[REQUEST_URI]";
+	$dominio = "/jsdesign/";
+	
+	?>
+	<link rel="stylesheet" type="text/css" href="<?php echo ($url == $dominio) ? '' : '../';?>bower_components/slick-carousel/slick/slick.css"/>
 	<!-- Add the new slick-theme.css if you want the default styling -->
-	<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-				
+	<link rel="stylesheet" type="text/css" href="<?php echo ($url == $dominio) ? '' : '../';?>bower_components/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="<?php echo ($url == $dominio) ? '' : '../';?>assets/style/main.css">	
 
-
-    <link rel="stylesheet" href="assets/style/main.css">	
 </head>
 <body>
 	<!-- A diciona os content das paginas-->
@@ -35,10 +40,10 @@
 		</div>
 	</footer>
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+	<script src="<?php echo ($url == $dominio) ? '' : '../';?>bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="<?php echo ($url == $dominio) ? '' : '../';?>bower_components/slick-carousel/slick/slick.min.js"></script>
 	
-	<script src="assets/js/main.js"></script>
+	<script src="<?php echo ($url == $dominio) ? '' : '../';?>assets/js/main.js"></script>
 
 
 </body>
